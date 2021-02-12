@@ -65,7 +65,7 @@
 					<h2>Resources</h2>
 				</a>
 				<p><a href="https://modrinth.js.org"><strong>Website</strong></a> -
-					<a href="https://modrinth.js.org/docs/"><strong>Documentation</strong></a> -
+					<a href="https://modrinth.js.org/"><strong>Documentation</strong></a> -
 				<a href="https://discord.gg/WUgGJhS"><strong>Discord</strong></a></p>
 				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 					<h2>Install</h2>
@@ -86,12 +86,34 @@
 
 <span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">user</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;rubybb&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// Promise&lt;User&gt;</span>
 <span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">user</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;suMONnLn&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// Promise&lt;User&gt;</span>
-<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">users</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;rubybb&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;jellysquid3&quot;</span><span style="color: #000000">]) </span><span style="color: #008000">// Promise&lt;[User, User]&gt;</span>
-<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">users</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;rubybb&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;TEZXhE2U&quot;</span><span style="color: #000000">]) </span><span style="color: #008000">// Promise&lt;[User, User]&gt;</span>
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">users</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;rubybb&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;jellysquid3&quot;</span><span style="color: #000000">]); </span><span style="color: #008000">// Promise&lt;[User, User]&gt;</span>
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">users</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;rubybb&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;TEZXhE2U&quot;</span><span style="color: #000000">]); </span><span style="color: #008000">// Promise&lt;[User, User]&gt;</span>
 
-<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mod</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;lambdynamiclights&quot;</span><span style="color: #000000">) </span><span style="color: #008000">// Promise&lt;Mod&gt;</span>
-<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mod</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;yBW8D80W&quot;</span><span style="color: #000000">) </span><span style="color: #008000">// Promise&lt;Mod&gt;</span>
-<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mods</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;lambdynamiclights&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;sodium&quot;</span><span style="color: #000000">]) </span><span style="color: #008000">// Promise&lt;[Mod, Mod]&gt;</span>
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mod</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;lambdynamiclights&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// Promise&lt;Mod&gt;</span>
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mod</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;yBW8D80W&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// Promise&lt;Mod&gt;</span>
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mods</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;lambdynamiclights&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;sodium&quot;</span><span style="color: #000000">]); </span><span style="color: #008000">// Promise&lt;[Mod, Mod]&gt;</span>
+
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">user</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;jellysquid3&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #001080">user</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">mods</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">user</span><span style="color: #000000">.</span><span style="color: #795E26">mods</span><span style="color: #000000">();</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">mods</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">    </span><span style="color: #008000">/* </span>
+<span style="color: #008000">    * something like this. :) </span>
+<span style="color: #008000">    * for the actual object returned, take a look the the documentation.</span>
+<span style="color: #008000">    * https://modrinth.js.org/classes/mod.html</span>
+<span style="color: #008000">    */</span>
+<span style="color: #000000">    [</span>
+<span style="color: #000000">        {</span>
+<span style="color: #000000">            </span><span style="color: #001080">id:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;AANobbMI&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">            </span><span style="color: #001080">slug:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;sodium&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">            </span><span style="color: #001080">title:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;Sodium&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">            </span><span style="color: #001080">status:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;approved&quot;</span><span style="color: #000000">,</span>
+<span style="color: #000000">            </span><span style="color: #001080">downloads:</span><span style="color: #000000"> </span><span style="color: #098658">1490</span><span style="color: #000000">,</span>
+<span style="color: #000000">            ...</span>
+<span style="color: #000000">        },</span>
+<span style="color: #000000">        ...</span>
+<span style="color: #000000">    ]</span>
+<span style="color: #000000">});</span>
 </code></pre>
 			</div>
 		</div>
@@ -105,6 +127,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/cache.html" class="tsd-kind-icon">Cache</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/mod.html" class="tsd-kind-icon">Mod</a>
 					</li>
@@ -119,6 +144,12 @@
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/version.html" class="tsd-kind-icon">Version</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/cachedata.html" class="tsd-kind-icon">Cache<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cacheoptions.html" class="tsd-kind-icon">Cache<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/file.html" class="tsd-kind-icon">File</a>
@@ -144,6 +175,12 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/versionsource.html" class="tsd-kind-icon">Version<wbr>Source</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#cachecallbackfn" class="tsd-kind-icon">Cache<wbr>Callback<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#cachemap" class="tsd-kind-icon">Cache<wbr>Map</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -164,10 +201,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 		</div>
 	</div>
