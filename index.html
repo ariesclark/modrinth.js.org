@@ -93,13 +93,16 @@
 <span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mod</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;yBW8D80W&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// Promise&lt;Mod&gt;</span>
 <span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">mods</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;lambdynamiclights&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;sodium&quot;</span><span style="color: #000000">]); </span><span style="color: #008000">// Promise&lt;[Mod, Mod]&gt;</span>
 
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">version</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;hKXQNf9z&quot;</span><span style="color: #000000">); </span><span style="color: #008000">// Promise&lt;Version&gt;</span>
+<span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">versions</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;YuZK7F05&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;hKXQNf9z&quot;</span><span style="color: #000000">]); </span><span style="color: #008000">// Promise&lt;[Version, Version&gt;]</span>
+
 <span style="color: #001080">modrinth</span><span style="color: #000000">.</span><span style="color: #795E26">user</span><span style="color: #000000">(</span><span style="color: #A31515">&quot;jellysquid3&quot;</span><span style="color: #000000">).</span><span style="color: #795E26">then</span><span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> </span><span style="color: #001080">user</span><span style="color: #000000"> </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">mods</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">user</span><span style="color: #000000">.</span><span style="color: #795E26">mods</span><span style="color: #000000">();</span>
 <span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #001080">mods</span><span style="color: #000000">);</span>
 
 <span style="color: #000000">    </span><span style="color: #008000">/* </span>
 <span style="color: #008000">    * something like this. :) </span>
-<span style="color: #008000">    * for the actual object returned, take a look the the documentation.</span>
+<span style="color: #008000">    * for the actual object returned, take a look at the documentation.</span>
 <span style="color: #008000">    * https://modrinth.js.org/classes/mod.html</span>
 <span style="color: #008000">    */</span>
 <span style="color: #000000">    [</span>
