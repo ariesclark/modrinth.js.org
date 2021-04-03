@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>File | Modrinth.js</title>
+	<title>Hashes | Modrinth.js</title>
 	<meta name="description" content="Documentation for Modrinth.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">Modrinth.js</a>
 				</li>
 				<li>
-					<a href="file.html">File</a>
+					<a href="hashes.html">Hashes</a>
 				</li>
 			</ul>
-			<h1>Interface File</h1>
+			<h1>Interface Hashes</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">File</span>
+						<span class="target">Hashes</span>
 					</li>
 				</ul>
 			</section>
@@ -78,10 +78,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="file.html#filename" class="tsd-kind-icon">filename</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="file.html#hashes" class="tsd-kind-icon">hashes</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="file.html#primary" class="tsd-kind-icon">primary</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="file.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="hashes.html#sha1" class="tsd-kind-icon">sha1</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="hashes.html#sha512" class="tsd-kind-icon">sha512</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,42 +88,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="filename" class="tsd-anchor"></a>
-					<h3>filename</h3>
-					<div class="tsd-signature tsd-kind-icon">filename<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="sha1" class="tsd-anchor"></a>
+					<h3>sha1</h3>
+					<div class="tsd-signature tsd-kind-icon">sha1<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rubybb/modrinth/blob/7619609/src/structs/VersionSource.ts#L24">structs/VersionSource.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/rubybb/modrinth/blob/7619609/src/structs/VersionSource.ts#L30">structs/VersionSource.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="hashes" class="tsd-anchor"></a>
-					<h3>hashes</h3>
-					<div class="tsd-signature tsd-kind-icon">hashes<span class="tsd-signature-symbol">:</span> <a href="hashes.html" class="tsd-signature-type" data-tsd-kind="Interface">Hashes</a></div>
+					<a name="sha512" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sha512</h3>
+					<div class="tsd-signature tsd-kind-icon">sha512<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/rubybb/modrinth/blob/7619609/src/structs/VersionSource.ts#L22">structs/VersionSource.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="primary" class="tsd-anchor"></a>
-					<h3>primary</h3>
-					<div class="tsd-signature tsd-kind-icon">primary<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/rubybb/modrinth/blob/7619609/src/structs/VersionSource.ts#L25">structs/VersionSource.ts:25</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="url" class="tsd-anchor"></a>
-					<h3>url</h3>
-					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/rubybb/modrinth/blob/7619609/src/structs/VersionSource.ts#L23">structs/VersionSource.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/rubybb/modrinth/blob/7619609/src/structs/VersionSource.ts#L29">structs/VersionSource.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,30 +143,24 @@
 					<li class=" tsd-kind-interface">
 						<a href="cacheoptions.html" class="tsd-kind-icon">Cache<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="file.html" class="tsd-kind-icon">File</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="file.html" class="tsd-kind-icon">File</a>
+						<a href="hashes.html" class="tsd-kind-icon">Hashes</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="file.html#filename" class="tsd-kind-icon">filename</a>
+								<a href="hashes.html#sha1" class="tsd-kind-icon">sha1</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="file.html#hashes" class="tsd-kind-icon">hashes</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="file.html#primary" class="tsd-kind-icon">primary</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="file.html#url" class="tsd-kind-icon">url</a>
+								<a href="hashes.html#sha512" class="tsd-kind-icon">sha512</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="hashes.html" class="tsd-kind-icon">Hashes</a>
-					</li>
 					<li class=" tsd-kind-interface">
 						<a href="license.html" class="tsd-kind-icon">License</a>
 					</li>
